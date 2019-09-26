@@ -1,7 +1,6 @@
 #!/bin/bash
 
-apt update
-apt upgrade
+sudo apt update;sudo apt upgrade
 
 apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desktop  gnome-audio gnome-nds-thumbnailer gnome-paint gnome-session-canberra gnome-todo terminator vim flatpak htop nmon gnome-software-plugin-flatpak nautilus-dropbox bijiben fonts-freefont-otf   fonts-freefont-ttf rar unrar zip unzip unace bzip2 lzop p7zip p7zip-full p7zip-rar  cockpit-pcp cockpit cockpit-bridge cockpit-system cockpit-ws rsync gdebi nftables screenfetch  baobab  bleachbit brasero brasero-cdrkit cdrskin chromium chromium-l10n converseen dcraw dvd+rw-tools dvdauthor ffmpegthumbnailer ffmpegthumbs file-roller fslint gdebi gedit gedit-plugins gimp gimp-gmic gimp-data-extras gimp-gap gimp-gutenprint gimp-plugin-registry gimp-help-es gparted gphoto2 gpicview imagination kodi imagination kodi libdvdread4 libdvdnav4 libmimic0 libxm4 lsb-release vlc vlc-plugin-notify xscreensaver  ttf-mscorefonts-installer
 
