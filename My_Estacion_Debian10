@@ -9,3 +9,7 @@ apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desk
 #Utilitarios de detección y optimización del Hardware
 
 apt install acpi acpitool acpi-support fancontrol firmware-linux-free hardinfo hwdata hwinfo irqbalance iucode-tool laptop-detect lm-sensors lshw lsscsi smartmontools xsensors
+
+apt install python3
+
+apt install vlc
