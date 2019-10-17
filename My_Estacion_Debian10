@@ -47,6 +47,12 @@ sudo apt -y install virt-top libguestfs-tools libosinfo-bin  qemu-system virt-ma
 sudo apt install flatpak 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+#antivirus Clamav
+sudo apt-get install clamav
+sudo apt-get install clamav-daemon
+sudo apt-get install libclamunrar6
+
+
 ##se debe desistarlar evolution de los repositorios de debian para instalarlos en flatpak ya que en los repositorios de debian no esta el complemento para exchange 
 
 #instalar desde evolution flatpak, flashplayer, spotify, odrive y skype 
