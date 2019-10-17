@@ -53,13 +53,16 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 #para completar el autocopiado hay que descomentar el bash_completion 
 
-vi /etc/bash.bashrc 
+ 
+
+###################Configuracion cosola##################
+
+vim /etc/bash.bashrc
 
 
-
-
-
-
+##activamos los alias que se encuentran en 91,92,93 
+##activamos el bash-complation
+##activamos el  force_color_prompt=yes en el campo 43
 
 
 
