@@ -2,14 +2,60 @@
 
 sudo apt update;sudo apt upgrade
 
-apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desktop  gnome-audio gnome-nds-thumbnailer gnome-paint gnome-session-canberra gnome-todo terminator vim flatpak htop nmon gnome-software-plugin-flatpak nautilus-dropbox bijiben fonts-freefont-otf   fonts-freefont-ttf rar unrar zip unzip unace bzip2 lzop p7zip p7zip-full p7zip-rar  cockpit-pcp cockpit cockpit-bridge cockpit-system cockpit-ws rsync gdebi nftables screenfetch  baobab  bleachbit brasero brasero-cdrkit cdrskin chromium chromium-l10n converseen dcraw dvd+rw-tools dvdauthor ffmpegthumbnailer ffmpegthumbs file-roller fslint gdebi gedit gedit-plugins gimp gimp-gmic gimp-data-extras gimp-gap gimp-gutenprint gimp-plugin-registry gimp-help-es gparted gphoto2 gpicview imagination kodi imagination kodi libdvdread4 libdvdnav4 libmimic0 libxm4 lsb-release vlc vlc-plugin-notify xscreensaver  ttf-mscorefonts-installer
-
+apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desktop  gnome-audio gnome-nds-thumbnailer gnome-paint gnome-session-canberra gnome-todo terminator vim flatpak htop nmon gnome-software-plugin-flatpak nautilus-dropbox bijiben fonts-freefont-otf   fonts-freefont-ttf rar unrar zip unzip unace bzip2 lzop p7zip p7zip-full p7zip-rar  cockpit-pcp cockpit cockpit-bridge cockpit-system cockpit-ws rsync gdebi nftables screenfetch  baobab  bleachbit brasero brasero-cdrkit cdrskin chromium chromium-l10n converseen dcraw dvd+rw-tools dvdauthor ffmpegthumbnailer ffmpegthumbs file-roller fslint gdebi gedit gedit-plugins gimp gimp-gmic gimp-data-extras gimp-gap gimp-gutenprint gimp-plugin-registry gimp-help-es gparted gphoto2 gpicview imagination kodi imagination kodi libdvdread4 libdvdnav4 libmimic0 libxm4 lsb-release vlc vlc-plugin-notify xscreensaver  ttf-mscorefonts-installer python3 vlc
+ 
 
 
 #Utilitarios de detección y optimización del Hardware
 
 apt install acpi acpitool acpi-support fancontrol firmware-linux-free hardinfo hwdata hwinfo irqbalance iucode-tool laptop-detect lm-sensors lshw lsscsi smartmontools xsensors
 
-apt install python3
+#estado del equipo  
+apt install conky conky-all curl lm-sensors hddtemp 
 
-apt install vlc
+
+#Adicionar Consultar
+# https://blog.redigit.es/guia-de-post-instalacion-para-debian/
+apt install apt-xapian-index apt-transport-https
+
+####comando consultar paquete  apt-xapian-index
+update-apt-xapian-index
+
+#utilidades revisar 
+apt install alien curl debian-keyring debian-archive-keyring htop lynx net-tools nmap rpm rpm-i18n screen ssh sudo testdisk w3m w3m-img tmux
+
+#Paquetes para compilar, empaquetar e instalar otros paquetes y programas:
+
+apt install autoconf automake build-essential dkms fastjar g++ gawk gcc gcc-multilib gettext gettext-base intltool intltool-debian jarwrapper gtk-recordmydesktop linux-headers-$(uname -r) mawk mesa-common-dev minizip nasm perl perl-base perl-modules pkg-config python-apt python-glade2 python-gtk2 python-libxml2 subversion wx-common wx3.0-headers x11proto-record-dev zlib1g zlib1g-dev
+
+
+#KVM
+#https://computingforgeeks.com/how-to-install-kvm-virtualization-on-debian/
+
+sudo apt -y install qemu-kvm libvirt-daemon  bridge-utils virtinst libvirt-daemon-system
+
+modprobe vhost_net
+lsmod | grep vhost
+
+sudo apt -y install virt-top libguestfs-tools libosinfo-bin  qemu-system virt-manager
+
+#flatpak
+sudo apt install flatpak 
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+##se debe desistarlar evolution de los repositorios de debian para instalarlos en flatpak ya que en los repositorios de debian no esta el complemento para exchange 
+
+#instalar desde evolution flatpak, flashplayer, spotify, odrive y skype 
+
+#para completar el autocopiado hay que descomentar el bash_completion 
+
+vi /etc/bash.bashrc 
+
+
+
+
+
+
+
+
+
