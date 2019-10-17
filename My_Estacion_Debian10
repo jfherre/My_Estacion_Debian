@@ -2,9 +2,13 @@
 
 sudo apt update;sudo apt upgrade
 
-apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desktop  gnome-audio gnome-nds-thumbnailer gnome-paint gnome-session-canberra gnome-todo terminator vim flatpak htop nmon gnome-software-plugin-flatpak nautilus-dropbox bijiben fonts-freefont-otf   fonts-freefont-ttf rar unrar zip unzip unace bzip2 lzop p7zip p7zip-full p7zip-rar  cockpit-pcp cockpit cockpit-bridge cockpit-system cockpit-ws rsync gdebi nftables screenfetch  baobab  bleachbit brasero brasero-cdrkit cdrskin chromium chromium-l10n converseen dcraw dvd+rw-tools dvdauthor ffmpegthumbnailer ffmpegthumbs file-roller fslint gdebi gedit gedit-plugins gimp gimp-gmic gimp-data-extras gimp-gap gimp-gutenprint gimp-plugin-registry gimp-help-es gparted gphoto2 gpicview imagination kodi imagination kodi libdvdread4 libdvdnav4 libmimic0 libxm4 lsb-release vlc vlc-plugin-notify xscreensaver  ttf-mscorefonts-installer python3 vlc
- 
+apt install libpam-fprintd gnome-colors empathy epiphany-browser task-gnome-desktop  gnome-audio gnome-nds-thumbnailer gnome-paint gnome-session-canberra gnome-todo terminator vim flatpak htop nmon gnome-software-plugin-flatpak nautilus-dropbox bijiben fonts-freefont-otf   fonts-freefont-ttf rar unrar zip unzip unace bzip2 lzop p7zip p7zip-full p7zip-rar  cockpit-pcp cockpit cockpit-bridge cockpit-system cockpit-ws rsync gdebi nftables screenfetch  baobab  bleachbit brasero brasero-cdrkit cdrskin chromium chromium-l10n converseen dcraw dvd+rw-tools dvdauthor ffmpegthumbnailer ffmpegthumbs file-roller fslint gdebi gedit gedit-plugins gimp gimp-gmic gimp-data-extras gimp-gap gimp-gutenprint gimp-plugin-registry gimp-help-es gparted gphoto2 gpicview imagination kodi imagination kodi libdvdread4 libdvdnav4 libmimic0 libxm4 lsb-release vlc vlc-plugin-notify xscreensaver  python3 vlc
 
+# Funestes tipograficas 
+apt install fonts-inconsolata fonts-droid-fallback ttf-dejavu xfonts-terminus fonts-droid-fallback ttf-dejavu ttf-bitstream-vera fonts-cantarell fonts-liberation ttf-dejavu fonts-oflb-asana-math fonts-mathjax ttf-anonymous-pro ttf-mscorefonts-installer
+ 
+#Actualizar las fuentes 
+sudo fc-cache -fv
 
 #Utilitarios de detección y optimización del Hardware
 
@@ -26,7 +30,7 @@ apt install alien curl debian-keyring debian-archive-keyring htop lynx net-tools
 
 #Paquetes para compilar, empaquetar e instalar otros paquetes y programas:
 
-apt install autoconf automake build-essential dkms fastjar g++ gawk gcc gcc-multilib gettext gettext-base intltool intltool-debian jarwrapper gtk-recordmydesktop linux-headers-$(uname -r) mawk mesa-common-dev minizip nasm perl perl-base perl-modules pkg-config python-apt python-glade2 python-gtk2 python-libxml2 subversion wx-common wx3.0-headers x11proto-record-dev zlib1g zlib1g-dev
+apt install autoconf automake build-essential dkms fastjar g++ gawk gcc gcc-multilib gettext gettext-base intltool intltool-debian jarwrapper gtk-recordmydesktop linux-headers-$(uname -r) mawk mesa-common-dev minizip nasm perl perl-base perl-modules pkg-config python-apt python-glade2 python-gtk2 python-libxml2 subversion wx-common wx3.0-headers x11proto-record-dev zlib1g zlib1g-dev make cmake aptitude synaptic 
 
 
 #KVM
